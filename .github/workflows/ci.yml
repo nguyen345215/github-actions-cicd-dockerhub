@@ -22,5 +22,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          pus
-
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-nginx-ci:latest
+  
